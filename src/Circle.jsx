@@ -10,7 +10,7 @@ const Circle = () => {
         opacity:[0.1,0.2,0.4,0.8,0.2,2,3]
       }}
       transition={{
-        duration:2.5
+        duration:2.3
       }} className="relative flex justify-center items-center">
         <div className="border absolute border-[#333333] rounded-full h-[150px] w-[150px] mt-20 animate-ping" />
         <div className="border  border-[#333333] rounded-full h-[350px] w-[350px] mt-20  absolute" />
