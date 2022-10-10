@@ -12,10 +12,10 @@ const Circle = () => {
       transition={{
         duration:2.3
       }} className="relative flex justify-center items-center">
-        <div className="border absolute border-[#333333] rounded-full h-[150px] w-[150px] mt-20 animate-ping" />
-        <div className="border  border-[#333333] rounded-full h-[350px] w-[350px] mt-20  absolute" />
-        <div className="border  border-[#333333] rounded-full h-[450px] w-[450px] mt-20  absolute" />
-        <div className="border  border-[#F7AB0A] opacity-20 rounded-full h-[600px] w-[600px] mt-20 animate-pulse absolute" />
+        <div className="border absolute border-[#333333] rounded-full h-[150px] w-[150px] mt-15 animate-ping" />
+        <div className="border  opacity-10  border-[#333333] rounded-full h-[350px] w-[350px] mt-15  absolute" />
+        <div className="border opacity-30  border-[#333333] rounded-full h-[450px] w-[450px] mt-15  absolute" />
+        <div className="border  border-[#F7AB0A] opacity-20 rounded-full h-[600px] w-[600px] mt-15 animate-pulse absolute" />
         {/* <div /> */}
       </motion.div>
     );

@@ -1,21 +1,28 @@
-import './App.css';
-import {useTypewriter} from 'react-simple-typewriter'
+
+import {Cursor, useTypewriter} from 'react-simple-typewriter'
+import ButtonsCircle from './ButtonsCircler';
 import Circle from "./Circle";
+import Navbar from './Navbar';
 function App() {
   const [words]=useTypewriter({
-    words:["Hello This is Test","It Worked 2"],loop:true,delaySpeed:2000,
+    words:["Hello Im Ahmed","Im A FullStack Web Dev (:"],loop:true,delaySpeed:2000,
             
   })
   return (
-    <>
-      <div>
-        <div className=" h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-          <Circle />
-          <p className="animate-spin "> "{words}"</p>
+    <div className='bg-[rgb(36,36,36)] text-white h-screen'>
+    <Navbar />
+      <div className=" h-screen flex flex-col space-y-7 items-center justify-center text-center overflow-hidden">
+        <div  className='z-0'>
+          <Circle  />
+          </div>
+          <p > "{words}"</p>
+          <div className='z-20'>
+          <ButtonsCircle />
+          </div>
+       
+     
         </div>
-      </div>
-        <p  className="animate-pulse"> Hello World</p>
-    </>
+    </div>
   );
 }
 
